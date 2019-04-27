@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">We Manages It For You</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">In this project we manage your database on cloud and use your details for your report management</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">We've got what you need!</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">We Have Tried Our Level best to make an effective software for your hospital to minimize the paper work </p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0">At Your Service</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Study Resources/h3>
+            <p class="text-muted mb-0">We study about the available resouces and tries to do work in those resources and make our product effective for you!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Up to Date</h3>
+            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Ready to Publish</h3>
+            <p class="text-muted mb-0">We will make our product ready for accomplition in your Hospital</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+            <h3 class="h4 mb-2">Made with full responsibility</h3>
+            <p class="text-muted mb-0"> We Made it with our full responsibilty</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Let's Get In Touch!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div>+92 335 28 99 624</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="ammarshehzad15@gmail.com">ammarshehzad15@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-12">
+    <h3>Gave Contact</h3>
+    <p>If you interested you can drop your details</p>
+      <form class="form-group" name="sentcontacts" id="contactForm" action = "/contact" method="post" novalidate>
+        <label for="fname">Phone Number</label></br>
+        <input type="text" id="pno" name="phonenumber" placeholder="Phone Number"></br>
+    
+        <label for="lname">Email Address</label></br>
+        <input type="text" id="lname" name="email" placeholder="Your Email Address"></br>
+                  <a type= "submit"  class="btn btn-lg btn-info" id = "sendcontactbutton" > Submit</a></div></br>
+        
+      </form>
+      </div>
+
+
+{% endblock %}
